@@ -1,6 +1,9 @@
-var parser = new (require('simple-excel-to-json').XlsParser)();
-var doc = parser.parseXls2Json('example.xlsx'); 
-console.log(doc[0]);
+const excelToJson = require('convert-excel-to-json');
+ 
+const result = excelToJson({
+    sourceFile: 'example.xlsx'
+});
+console.log(result);
 
 // let str = document.querySelector('#vri');
 
@@ -77,23 +80,23 @@ console.log(doc[0]);
 
 // // }
 
-console.log('Hello');
+// console.log('Hello');
 
 // index.js
 // создание свойства класса без конструктора
-class Game {
-    name = 'Violin Charades'
-}
-const myGame = new Game()
+// class Game {
+//     name = 'Violin Charades'
+// }
+// const myGame = new Game()
 
 // создаем параграф
-const p = document.createElement('p')
-p.textContent = `I like ${myGame.name}.`
+// const p = document.createElement('p')
+// p.textContent = `I like ${myGame.name}.`
 
 // создаем элемент заголовка
-const heading = document.createElement('h1')
-heading.textContent = 'Как интересно!'
+// const heading = document.createElement('h1')
+// heading.textContent = 'Как интересно!'
 
 // добавляем параграф и заголовок в DOM
-const root = document.querySelector('#root')
-root.append(heading, p)
+// const root = document.querySelector('#root')
+// root.append(heading, p)
