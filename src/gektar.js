@@ -1,3 +1,7 @@
+var parser = new (require('simple-excel-to-json').XlsParser)();
+var doc = parser.parseXls2Json('example.xlsx'); 
+console.log(doc[0]);
+
 // let str = document.querySelector('#vri');
 
 // let vriButton = document.querySelector('.vri__button');
@@ -73,7 +77,7 @@
 
 // // }
 
-console.log('Hello dfghfdg');
+console.log('Hello');
 
 // index.js
 // создание свойства класса без конструктора
