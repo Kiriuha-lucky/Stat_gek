@@ -1,9 +1,12 @@
-const excelToJson = require('convert-excel-to-json');
+'use strict';
+
+"use strict";
+const excelToJson = require("convert-excel-to-json");
  
-const result = excelToJson({
-    sourceFile: 'example.xlsx'
+ constresult = excelToJson({
+    sourceFile:'example.xls'
 });
-console.log(result);
+
 
 // let str = document.querySelector('#vri');
 
