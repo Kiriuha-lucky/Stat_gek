@@ -71,6 +71,7 @@ let sumVri = (statList, statListFilter, arr) => {
 let render = (arr) => {
     console.log(arr);
     sumAllViews = countAllViews();
+    console.log(`Всего: ${sumAllViews}`);
     sumVri(statList, statListFilter, arr);
     
     let statListArray = Object.entries(statList);
