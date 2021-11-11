@@ -1,7 +1,9 @@
 import statList from "./statList";
 import statListFilter from "./statListFilter";
+import DATA from "../data.json"
 
 'use strict';
+console.log(DATA);
 
 let str = document.querySelector('#vri');
 
